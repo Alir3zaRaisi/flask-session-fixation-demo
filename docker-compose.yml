@@ -1,0 +1,10 @@
+services:
+  secure-app:
+    build: ./Session_Fixation/secure-app
+    ports:
+      - "5001:5000"  # Map host port 5001 to container port 5000
+
+  vulnerable-app:
+    build: ./Session_Fixation/vulnerable-app
+    ports:
+      - "5002:5000"  # Map host port 5002 to container port 5000
